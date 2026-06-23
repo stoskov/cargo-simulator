@@ -5,6 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cargo Loading Simulator</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          // Primary — brand blue
+          primary:              '#2563EB',
+          'primary-dark':       '#1D4ED8',
+          'primary-soft':       '#EAF1FE',
+          'primary-soft-hover': '#D8E6FD',
+          // Success
+          success:              '#16A34A',
+          'success-soft':       '#E7F6EC',
+          'success-fill':       '#22C55E',
+          // Danger
+          danger:               '#DC2626',
+          'danger-text':        '#B91C1C',
+          'danger-soft':        '#FCEBEA',
+          'danger-border':      '#F4C7C3',
+          // Warning
+          warning:              '#F97316',
+          'warning-text':       '#C2410C',
+          'warning-soft':       '#FFF7ED',
+          'warning-border':     '#FCD9A8',
+          // Neutrals
+          muted:                '#9AA4B2',
+          ink:                  '#1F2937',
+          'ink-soft':           '#6B7280',
+          'card-border':        '#E5E7EB',
+          'input-border':       '#D6DBE2',
+          'chip-bg':            '#F3F4F6',
+          'surface-soft':       '#F7F9FC',
+        },
+        fontSize: {
+          'display': ['32px', { lineHeight: '1',   fontWeight: '700' }],
+          'heading': ['18px', { lineHeight: '1.2', fontWeight: '700' }],
+          'subhead': ['16px', { lineHeight: '1.3', fontWeight: '700' }],
+          'stat':    ['22px', { lineHeight: '1',   fontWeight: '800' }],
+          'body':    ['14px', { lineHeight: '1.4' }],
+          'label':   ['13px', { lineHeight: '1.3' }],
+          'caption': ['12px', { lineHeight: '1.3' }],
+          'micro':   ['11px', { lineHeight: '1.2' }],
+          'badge':   ['10px', { lineHeight: '1'   }],
+        },
+      }},
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    body { background: #F3F4F6; }
+  </style>
 
 <script type="importmap">
 {
@@ -20,19 +73,9 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="assets/index-Dqobf-Pw.js"></script>
+  <script type="module" crossorigin src="./assets/index-CqhzK49h.js"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Logo + Title Header defined in HTML -->
-  <div class="w-full max-w-screen-lg mx-auto px-3 lg:px-6">
-    <div class="flex items-center pt-3 lg:pt-6 mb-6">
-      <img src="assets/pegasus_logo-C4Nzqc1J.png" alt="Pegasus Cargo Solutions Logo" class="h-20 md:h-24 mr-4">
-      <h1 class="text-3xl md:text-4xl font-extrabold text-blue-600 text-center flex-grow">
-        Cargo Loading Simulator
-      </h1>
-    </div>
-  </div>
+<body class="text-gray-800">
 
   <div id="root"></div>
 
